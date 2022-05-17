@@ -12,13 +12,13 @@ func TestContainsString(t *testing.T) {
 		want  bool
 	}{
 		{
-			name:  "ContainsString",
+			name:  "ContainsStringYes",
 			items: []string{"foo", "bar"},
 			item:  "bar",
 			want:  true,
 		},
 		{
-			name:  "ContainsString",
+			name:  "ContainsStringNo",
 			items: []string{"foo", "bar"},
 			item:  "oh",
 			want:  false,
