@@ -1,10 +1,9 @@
 package utils
 
-// Contains To use it, we have to make the following function call:
-// Contains[string](["bar", "foo"], "foo") .
-func Contains[T comparable](items []T, item T) bool {
-	for _, v := range items {
-		if v == item {
+// Contains returns true if element is in the slice
+func Contains[T comparable](elems []T, v T) bool {
+	for _, s := range elems {
+		if v == s {
 			return true
 		}
 	}
