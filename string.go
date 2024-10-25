@@ -10,7 +10,7 @@ const (
 )
 
 func RandomString(size int) string {
-	stringLength := min([]int{size, len(charList)})
+	stringLength := min(size, len(charList))
 	theKey := make([]byte, stringLength)
 	for key := 0; key < stringLength; key++ {
 		res, _ := rand.Int(rand.Reader, big.NewInt(int64(len(charList))))
